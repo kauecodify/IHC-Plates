@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadarPass</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="cia.png" width="150px">
+        <h1>RadarPass</h1>
+        <h2>License plate recognition for adapted helicopters</h2>
+        <h2>AH-1W</h2>
+        <img src="ah1w.png">
+    </div>
+
+    <div class="container">
+        <h2>Turn on the sensor</h2>
+
+        <video id="videoElement" autoplay playsinline></video>
+        <canvas id="canvasElement"></canvas>
+        
+        <div class="plateResult">
+            <h2>Plate identified:</h2>
+            <p id="plateText"></p>
+        </div>
+
+        <div class="plateResult">
+            <h2>Government information:</h2>
+            <p id="governmentText"></p>
+        </div>
+
+        <div class="plateResult">
+            <h2>Fines and restrictions:</h2>
+            <p id="finesText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
